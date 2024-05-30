@@ -1,0 +1,113 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #97dedf;
+    background: #ffffff url('../recursos/OIP\ \(1\).jpg');
+}
+
+#calendar {
+    width: 100%;
+    max-width: 900px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background:  #3eb2ba;
+    color: white;
+    padding: 10px;
+}
+
+#weekdays {
+    display: flex;
+    background: #f0f0f0;
+    text-align: center;
+}
+
+#weekdays div {
+    flex: 1;
+    padding: 10px;
+    box-sizing: border-box;
+    border-right: 1px solid #ddd;
+}
+
+#weekdays div:last-child {
+    border-right: none;
+}
+
+#days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    background: #fff;
+}
+
+#days div {
+    border: 1px solid #ddd;
+    height: 100px;
+    box-sizing: border-box;
+    padding: 10px;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#days div:hover {
+    background: #f9f9f9;
+}
+
+#days div span {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    background: #4CAF50;
+    color: white;
+    padding: 2px 5px;
+    border-radius: 3px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+#eventForm {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: 300px;
+    box-sizing: border-box;
+}
+
+#eventForm h2 {
+    margin: 0 0 10px 0;
+}
+
+#eventForm input, #eventForm select, #eventForm textarea, #eventForm button {
+    width: 100%;
+    margin: 5px 0;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#eventForm textarea {
+    resize: none;
+    height: 60px;
+}

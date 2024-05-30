@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendario Para Agendar Eventos</title>
+    <link rel="stylesheet" href="../css/stilos.css">
+</head>
+<body>
+    
+    <div id="calendar">
+        <div id="header">
+            
+            <button id="prev">ANTERIOR</button>
+            <h1 id="monthYear"></h1>
+            <button id="next">SIGUIENTE</button>
+        </div>
+        <div id="weekdays">
+            <div>Domingo</div><div>Lunes</div><div>Martes</div><div>Miécoles</div><div>Jueves</div><div>Viernes</div><div>Sáb</div>
+        </div>
+        <div id="days"></div>
+    </div>
+    <div id="eventForm">
+        <h2>Nuevo Evento</h2>
+        <input type="text" id="eventTitle" placeholder="Título del Evento">
+        <input type="date" id="eventDate">
+        <select id="eventTime">
+            <option value="2:00">3:00 AM</option>
+            <option value="3:00">3:00 AM</option>
+            <option value="4:00">4:00 AM</option>
+            <option value="5:00">5:00 AM</option>
+            <option value="6:00">6:00 AM</option>
+            <option value="7:00">7:00 AM</option>
+            <option value="8:00">8:00 AM</option>
+            <option value="9:00">9:00 AM</option>
+            <option value="10:00">10:00 AM</option>
+            <option value="11:00">11:00 AM</option>
+            <option value="12:00">12:00 AM</option>
+            <option value="1:00">1:00 PM</option>
+            <option value="2:00">2:00 PM</option>
+            <option value="3:00">3:00 PM</option>
+            <option value="4:00">4:00 PM</option>
+            <option value="5:00">5:00 PM</option>
+            <option value="6:00">6:00 PM</option>
+            <option value="7:00">7:00 PM</option>
+            <option value="8:00">8:00 PM</option>
+            <option value="9:00">9:00 PM</option>
+            <option value="10:00">10:00 PM</option>
+            <option value="11:00">11:00 PM</option>
+            <option value="12:00">12:00 PM</option>
+        </select>
+        <input type="color" id="eventColor" value="#4CAF50">
+        <textarea id="eventDescription" placeholder="Descripción del Evento"></textarea>
+        <input type="text" id="eventParticipants" placeholder="Nombres de los Participantes">
+        <button id="saveEvent">Guardar Evento Ev</button>
+        <button id="deleteEvent" style="display:none;">Eliminar Evento</button>
+    </div>
+    <script src="../js/javascript.js"></script>
+</body>
+</html>
